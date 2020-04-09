@@ -1,62 +1,27 @@
 * {
   font-family: sans-serif;
   font-size: 1.1em;
-  color: rgb(44, 44, 44);
-  width: 95%;
- 
+  color: rgb(14, 15, 15);
 }
 
-/*  Testing borders
-html{
-  border: 5px solid rgb(15, 145, 134);
-}
-
-body{
-  border: 5px solid rgb(236, 127, 2);
-}
-
-section{
-  border: 5px solid rgb(154, 236, 2);
-}
-
-nav{
-  border: 3px solid rgb(230, 62, 112);
- 
-}
-*/
-
-ul {
-  border: 1px solid rgb(5, 56, 35);
-}
-
-
-li{
+li{ 
   
-  display: inline;  /* Horizontal display */ 
-  padding: 0px 60px 0px 60px;   /*top right middle left */ 
-  
+  display: inline; /* Horizontal display */ 
 }
 
-
-a{
-
-  font-style: italic;
+a{ 
   text-decoration: none;  /* remove underline */
-
+  padding: 0px 70px 0px 70px;
 }
 
-/* : is psudo class*/
-
-a:focus{
+:hover{     /* change color when cursor over an element */
+  color: rgb(16, 132, 148);
+}
+:focus{    /* underline and change color when on a set page */
   text-decoration: underline;
-  color: rgb(0, 4, 238);
+  color: rgb(16, 132, 148);
 }
 
-a:hover {
-  color: rgb(230, 62, 62);
-}
-
-
-a.active{
-  background-color: rgb(238, 0, 131);
+:active{   /* chage the color when something is clicked on */
+  color: rgb(255, 0, 0);
 }
