@@ -7,8 +7,63 @@
     <title>Form</title>
     <link rel="stylesheet" href="2-form.css" />
   </head>
+
   <body>
     <!-- add your code below -->
-    <p>exercise #2 - creating a form</p>
+    <fieldset>
+      <form id="contactForm">
+        <legend id="contactFormlegend">
+          Contact Form
+        </legend>
+        <!-- name -->
+        <p>
+          <label for="userName">
+            Name
+          </label>
+          <br />
+          <input type="text" name="it" id="userName" />
+        </p>
+
+        <!-- email -->
+        <p>
+          <label for="emailAddress">
+            Email Address
+          </label>
+          <br />
+          <input type="text" name="it" id="emailAddress" />
+        </p>
+
+        <!-- comments-->
+        <p>
+          <label for="commentBox">
+            Comments?
+          </label>
+          <br />
+          <textarea
+            name="ta"
+            id="commentBox"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </p>
+
+        <!-- checkbox -->
+        
+        <p>
+          <label>
+            <div class ="checkBoxWrapper">
+            <input type="checkbox" name="cb" id="newsLetter" checked ="checked" />
+          </div>
+          Sign up for the newsletter
+          </label>
+     
+        </p>
+  
+
+        <!-- submit -->
+        <button>Submit</button>
+        <input type="submit">
+      </form>
+    </fieldset>
   </body>
 </html>
