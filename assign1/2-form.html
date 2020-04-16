@@ -11,26 +11,26 @@
   <body>
     <!-- add your code below -->
     <fieldset>
-      <form id="contactForm">
+      <form name ="contactForm" onsubmit="return validateForm()">
         <legend id="contactFormlegend">
           Contact Form
         </legend>
         <!-- name -->
         <p>
           <label for="userName">
-            Name
+            Name (required)
           </label>
           <br />
-          <input type="text" name="it" id="userName" />
+          <input type="text" id="userName" onkeyup="checkName()"/>
         </p>
 
         <!-- email -->
         <p>
           <label for="emailAddress">
-            Email Address
+            Email Address (required)
           </label>
           <br />
-          <input type="text" name="it" id="emailAddress" />
+          <input type="text" id="emailAddress" onkeyup="checkEmail()"/>
         </p>
 
         <!-- comments-->
@@ -50,20 +50,51 @@
         <!-- checkbox -->
         
         <p>
-          <label>
-            <div class ="checkBoxWrapper">
-            <input type="checkbox" name="cb" id="newsLetter" checked ="checked" />
-          </div>
-          Sign up for the newsletter
+          <label class = "checkbox">
+            <input type="checkbox" checked ="checked" />
+              <span>Sign up for the newsletter</span>
           </label>
      
         </p>
   
-
         <!-- submit -->
-        <button>Submit</button>
-        <input type="submit">
+         <!-- <input type="submit" value="Submit" /> -->
+         <button>Submit</button>
+    
       </form>
     </fieldset>
   </body>
+
+  <script>
+    function validateForm() {
+      return checkName();
+    }
+    
+    function checkName() {
+      checkEmail();    
+        var name = document.forms["contactForm"]["userName"].value;
+        
+        if (name.length > 0) {
+            document.getElementById("userName").className = '';
+            return true;
+        } 
+        else{
+            document.getElementById("userName").className = 'error';
+            return false;
+        }
+    }
+    function checkEmail() {
+        
+        var name = document.forms["contactForm"]["emailAddress"].value;
+        
+        if (name.length > 0) {
+            document.getElementById("emailAddress").className = '';
+            return true;
+        } 
+        else{
+            document.getElementById("emailAddress").className = 'error';
+            return false;
+        }
+    }
+    </script>
 </html>
