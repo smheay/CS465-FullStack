@@ -12,11 +12,11 @@ input:focus, textarea:focus{
   border: solid 1px rgb(79, 79, 223);	
 }
 
-
-
 form > p {
-  text-align: left;
+  text-align:left;
 }
+
+/* Red Square to require name and email */
 .error {
   border:2px solid red;
 }
@@ -24,43 +24,46 @@ form > p {
 
 /** https://dev.to/proticm/styling-html-checkboxes-is-super-easy-302o */
 
+
+/* checkbox not check */
 .checkbox {
+  -webkit-appearance: none;
+	background-color: #ffffff;
+  border: 1px solid #8b8b8b;
+  height: auto;
+  width: auto;
+  padding: 9px;
+	border-radius: 1px;
+  position: relative;
+  top:7px;
   display: inline-flex;
   cursor: pointer;
-  position: relative;
+}
+/* active on click*/
+.checkbox:active, .checkbox:checked:active {
+ /*  box-shadow: 0 1px 2px rgba(251, 255, 0, 0.05), inset 0px 1px 3px rgba(0,0,0,0.1); */
+  height: auto;
+  width: auto;
 }
 
-.checkbox > span {
-  color: rgb(0, 0, 0);
-  padding: 0.5rem 0.25rem;
+/* checkbox background*/
+.checkbox:checked {
+	background-color: #1699f0;
+	border: 1px solid #8b8b8b;
+/*   box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+ */  height: auto;
+  width: auto;
+	color: #99a1a7;
 }
 
-.checkbox > input {
-  height: 25px;
-  width: 25px;
-  border: 1px solid rgb(78, 78, 78);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  outline: none;
-  background-color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-
-.checkbox > input:checked {
-  border: 1px solid rgb(24, 143, 255);
-  background-color: rgb(29, 132, 235);
-}
-
-.checkbox > input:checked + span::before {
-  content: "\2713";
-  display: block;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  left: 0.7rem;
-  top: 0.2rem;
+/* check mark style */
+.checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+  left: 3px;
+	color: #ffffff;
 }
 
 button {
@@ -90,7 +93,7 @@ button {
 
   body {
     font-size: 13px;
-    background-color: #9be721;
+    background-color: #006060;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     color: #ccc;
     text-align: center;
@@ -99,7 +102,7 @@ button {
   fieldset {
     display: inline-block;
     color: black;
-    background-color: #ccc;
+    background-color: #006060;
     border: #ccc;
     min-width: 100px;
     max-width: 200px;
@@ -144,7 +147,7 @@ textarea {
 
 @media (min-width: 769px) {
   body {
-    background-color: #f3fdfd;
+    background-color: #006060;;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     text-align: center;
   }

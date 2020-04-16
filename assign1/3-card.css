@@ -1,9 +1,73 @@
+*{
+  /* border: solid 1px gray; */
+}
+
 body {
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
-  color: #555;
+  color: rgb(0, 0, 0);
+  border-color: #555
 }
 
-a {
-  color: rgb(0, 96, 96);
+
+.centerContainer{
+  text-align: center;
+}
+
+.centerFlex {
+  width: 45%;
+  height: 1000px;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+}
+
+.flex-container {
+  height: 800px;
+  border: solid 1px gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap /* this will wrap onto multiple lines */;
+  /* flex-wrap: nowrap  maybe use this */;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+ h1{
+  color: #555;
+  font-weight: 900;
+  size: 30px;
+}
+.flex-item {
+  border: solid 1px gray;
+  width: 300px;
+  height: 75%;
+  flex: 1;
+  margin: 10px;
+  padding: 10px; 
+  text-align: left;
+}
+
+figcaption{
+ 
+  height: 230px;
+  color: #555;
+  font-weight: bolder;
+}
+
+details.details{
+  border: solid 1px rgb(255, 255, 255);
+  color: rgb(7, 7, 7);
+  width: 150px;
+  height: 60px;
+  margin: 0 ;
+  padding: 10px;
+}
+.moreInfo {
+  border: solid 1px rgb(255, 255, 255);
+  text-align: left;
+  width: 150px;
+  height: 60px;
+  margin: 0 ;
+  padding: 0px;
+  color: rgb(7, 97, 55);
 }
