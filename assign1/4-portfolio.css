@@ -1,0 +1,93 @@
+* {
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+
+  /* margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0; */
+}
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  height: 99%;
+  width: 99%;
+  border: 5px solid black;
+  margin: 0 auto;
+}
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(255, 0, 0);
+    margin: 0 auto;
+
+
+
+    
+}
+
+h1{
+    height: 10%px;
+    background-color: skyblue;
+}
+.active {
+  background-color: skyblue;
+}
+
+.purple{
+  color: #800080;
+  font-style: italic;
+  font-weight: 3em;
+  background-color: bisque;
+
+  width: 50%;
+  height: 50%;
+
+  display: flex; /* Adjusts the contents of div */
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  margin: 0 auto; /* center a block element  */
+}
+
+div.box {
+    width: 30%;
+    height: 100%;
+  background-color: rgb(157, 206, 255);
+}
+
+aside{
+    width: 25%;
+    height: 500px;
+    background-color: teal;   
+}
+aside section{
+    width: 95%;
+    background-color: tomato;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 411px) {
+  body {
+    background: rgb(252, 201, 252);
+  }
+}
+@media (min-width: 412px) and (max-width: 900px) {
+  body {
+    background: rgb(214, 185, 130);
+  }
+}
+@media (min-width: 901px) {
+  body {
+    background: rgb(169, 243, 169);
+  }
+}
