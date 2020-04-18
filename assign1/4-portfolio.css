@@ -1,5 +1,5 @@
 * {
-  border: 1px solid black;
+    /* border: 1px solid black;  */
   color: rgb(0, 0, 0);
 
   /* margin-bottom: 0;
@@ -7,8 +7,30 @@
     margin-right: 0;
     margin-top: 0; */
 }
+
+:hover {
+  /* change color when cursor over an element */
+  color: rgb(16, 132, 148);
+}
+:focus {
+  /* underline and change color when on a set page */
+  text-decoration: underline;
+  color: rgb(16, 132, 148);
+}
+
+:active {
+  /* chage the color when something is clicked on */
+  color: rgb(255, 0, 0);
+}
+
 html {
   height: 100%;
+  /* margin: 10px 10px 10px 10px;
+ */
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
 }
 
 body {
@@ -16,78 +38,262 @@ body {
   font-size: 20px;
   height: 99%;
   width: 99%;
-  border: 5px solid black;
-  margin: 0 auto;
+
+  /*  margin: 0 auto; */
+}
+div.wrapper {
+  height: 100%;
+  width: 100%;
+
+  /*  margin: 0 auto; */
 }
 
-.wrapper{
-    height: 100%;
-    width: 100%;
-    border: 1px solid rgb(255, 0, 0);
-    margin: 0 auto;
-
-
-
-    
-}
-
-h1{
-    height: 10%px;
-    background-color: skyblue;
-}
-.active {
-  background-color: skyblue;
-}
-
-.purple{
+#container {
   color: #800080;
   font-style: italic;
   font-weight: 3em;
-  background-color: bisque;
-
-  width: 50%;
+  /*   background-color: rgb(228, 152, 59);
+ */
+  width: 99%;
   height: 50%;
 
   display: flex; /* Adjusts the contents of div */
   flex-direction: row;
   flex-wrap: wrap;
 
-  justify-content: center;
+  justify-content: space-between;
+  align-content: center;
 
-  margin: 0 auto; /* center a block element  */
+  /*margin: 0 auto;  /* center a block element  */
 }
 
 div.box {
-    width: 30%;
-    height: 100%;
-  background-color: rgb(157, 206, 255);
+  width: 25%;
+  height: 100%;
+  /* background-color: rgb(157, 206, 255);
+ */
+  align-self: start;
 }
 
-aside{
-    width: 25%;
-    height: 500px;
-    background-color: teal;   
-}
-aside section{
-    width: 95%;
-    background-color: tomato;
-    display: block;
-    margin: 0 auto;
+#item1 {
+  width: 10%;
+  /* height: 50%; */
+  align-self: flex-end;
+  /*   background-color: rgb(153, 146, 145);
+ */
 }
 
+#item1-1 {
+  width: 100%;
+  height: 25%;
+  align-self: center;
+  /*   background-color: rgb(150, 57, 42);
+ */
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+
+#item1-1-1 {
+  width: 45%;
+  height: 25%;
+  align-self: center;
+  /*   background-color: rgb(150, 57, 42);
+ */
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#item1-1-2 {
+  width: 45%;
+  height: 25%;
+  align-self: center;
+  /*   background-color: rgb(150, 57, 42);
+ */
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+#item1-2 {
+  width: 100%;
+  height: 25%;
+  align-self: flex-start;
+  /*   background-color: rgb(221, 102, 83);
+ */
+  text-align: center;
+}
+
+#item1-3 {
+  width: 100%;
+  height: 25%;
+  align-self: center;
+  /*   background-color: rgb(214, 157, 148);
+ */
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  text-align: right;
+}
+
+#item4 {
+  /*   background-color: rgb(252, 196, 186);
+ */
+  align-self: end;
+  text-align: center;
+}
+
+#container2 {
+  width: 99%;
+  height: 5%;
+  /*   background-color: rgb(148, 126, 100);
+ */
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+}
+
+#b2item1 {
+  /*   background-color: tomato;
+ */
+}
+
+div.aside {
+  width: 25%;
+  height: 500px;
+  /*   background-color: rgb(185, 233, 233);   
+ */
+  text-align: center;
+}
+aside > section {
+  width: 95%;
+  /*   background-color: tomato;
+ */
+  display: block;
+}
+
+h1,
+h2 {
+  height: 5%px;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  height: 5%;
+
+  font: 4em sans-serif;
+  /* background-image:url("image/Cat2.png"); */
+}
+
+h2 {
+  font: 2em sans-serif;
+}
+
+h3 {
+  font: 2em sans-serif;
+  /*    background-color: thistle;
+ */ /* background-image:url("image/Cat2.png"); */
+}
+
+.list1 {
+  font: 1.5em sans-serif;
+}
+
+p,
+p.personalInfo {
+  font: 30px sans-serif;
+  text-align: center;
+}
+
+/* 
 
 @media (max-width: 411px) {
   body {
-    background: rgb(252, 201, 252);
+    background-image:url("image/411BG.png");
   }
 }
-@media (min-width: 412px) and (max-width: 900px) {
+(min-width: 412px) and 
+ */
+
+@media (max-width: 1659px) {
+  html{
+    height: 140%;
+  }
   body {
-    background: rgb(214, 185, 130);
+    background-image: url("image/BigBG.png");
+    min-width: px;
+
+    height: 100%;
+    width: 90%;
+  }
+  h1 {
+    text-align: center;
+  }
+  #container {
+    color: #800080;
+    font-style: italic;
+    font-weight: 3em;
+
+    height: 90%;
+
+    display: flex; /* Adjusts the contents of div */
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+
+    min-width: 411px;
+
+    /*margin: 0 auto;  /* center a block element  */
+  }
+
+  #item1 {
+    width: 100%;
+    /* height: 50%; */
+    align-self: flex-start;
+    /*     background-color: rgb(153, 146, 145);
+ */
+  }
+  #item2 {
+    width: 100%;
+    /* height: 50%; */
+    align-self: flex-start;
+    /*     background-color: rgb(153, 146, 145);
+ */
+    text-align: center;
+  }
+
+  #item3 {
+    width: 100%;
+    /* height: 50%; */
+    align-self: flex-start;
+    /*     background-color: rgb(153, 146, 145);
+ */
+    text-align: center;
+  }
+  #item4 {
+    width: 100%;
+    /* height: 50%; */
+    align-self: flex-start;
+    /*     background-color: rgb(153, 146, 145);
+ */
+    text-align: center;
+  }
+
+  #container2 {
+    width: 100%;
+    height: 10%;
+    /*   background-color: rgb(148, 126, 100);
+ */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
   }
 }
-@media (min-width: 901px) {
+
+@media (min-width: 1660px) {
   body {
-    background: rgb(169, 243, 169);
+    background-color: burlywood;
   }
 }
