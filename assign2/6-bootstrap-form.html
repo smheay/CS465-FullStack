@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <link
-        rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
 
-        <!--   <link
+    <!--   <link
                       rel="stylesheet"
                       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
                       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
@@ -16,60 +19,98 @@
                     />
                    -->
 
-        <link rel="stylesheet" href="6-bootstrap-form.css"/>
-        <title>Bootstrap Form Exercise</title>
-    </head>
+    <link rel="stylesheet" href="6-bootstrap-form.css" />
+    <title>Bootstrap Form Exercise</title>
+  </head>
 
-    <body class="bg-dark">
-        <div class=" rounded container bg-light m-5  mx-auto w-50">
-            <fieldset class="form-border ">
-                <legend class="form-border-legend text-center font-weight-bold ">Contact Form</legend>
+  <body class="bg-dark">
+    <div class="rounded container bg-light m-5 mx-auto w-50">
+      <fieldset class="form-border">
+        <legend class="form-border-legend text-center font-weight-bold">
+          Contact Form
+        </legend>
 
-                <form>
-                    <div
-                        class="form-group">
-                        <!--        
+        <form>
+          <div class="form-group">
+            <!--        
                                                               <span class="required"> (required) </span> 
                                                               from http://web-accessibility.carnegiemuseums.org/code/forms/
                                                                 suggested to use over * -->
-                        <label for="nameform1">Name *
-                        </label>
-                        <input type="text" class="form-control" id="nameform1" aria-describedby="nameHelp" placeholder="Enter Name" required/>
-                        <div class="invisible  " id="nameHelp">
-                            Enter your full name
-                        </div>
+            <label for="nameform1">Name * </label>
+            <input
+              type="text"
+              class="form-control"
+              id="nameform1"
+              aria-describedby="nameHelp"
+              placeholder="Enter Name"
+              required
+            />
+            <div class="invisible" id="nameHelp">
+              Enter your full name
+            </div>
 
+            <label for="emailaddressform1">Email address * </label>
+            <input
+              type="email"
+              class="form-control"
+              id="emailaddressform1"
+              aria-describedby="emailHelp"
+              placeholder="Enter Email"
+              required
+            />
+            <div class="invisible" id="emailHelp">
+              Enter your email address
+            </div>
 
-                        <label for="emailaddressform1">Email address *
-                        </label>
-                        <input type="email" class="form-control" id="emailaddressform1" aria-describedby="emailHelp" placeholder="Enter Email" required/>
-                        <div class="invisible  " id="emailHelp">
-                            Enter your email address</div>
+            <label for="textareaform1">Submit your message:</label>
+            <textarea
+              class="form-control"
+              id="textareaform1"
+              aria-describedby="textareaHelp"
+              rows="5"
+            ></textarea>
+            <div class="invisible" id="textareaHelp">
+              Type a message
+            </div>
 
-                        <label for="textareaform1">Submit your message:</label>
-                        <textarea class="form-control " id="textareaform1" aria-describedby="textareaHelp" rows="5"></textarea>
-                        <div class="invisible  " id="textareaHelp">
-                            Type a message
-                        </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="newsletterform1"
+                role="checkbox"
+                checked
+                aria-checked="true"
+                aria-describedby="checkHelp"
+              />
+              <label class="form-check-label" for="newsletterform1">
+                Sign up for the newsletter</label
+              >
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="newsletterform1" role="checkbox" checked aria-checked="true" aria-describedby="checkHelp"/>
-                            <label class="form-check-label" for="newsletterform1">
-                                Sign up for the newsletter</label>
+              <div class="invisible" id="checkHelp">
+                Would you like to sign up for the newsletter
+              </div>
+            </div>
 
-
-                            <div class="invisible  " id="checkHelp">Would you like to sign up for the newsletter
-                            </div>
-                        </div>
-
-                        <div class="btn-group container ">
-                            <button class=" rounded mr-1 btn btn-primary font-weight-bold " type="submit" aria-label="submit form">Submit</button>
-                            <input class=" rounded btn btn-secondary font-weight-bold " type="reset" value="Reset" aria-label="submit form"/>
-
-                        </div>
-                    </div>
-                </form>
-            </fieldset>
-        </body>
-    </body>
-</html></div></body></html>
+            <div class="btn-group container">
+              <button
+                class="rounded mr-1 btn btn-primary font-weight-bold"
+                type="submit"
+                aria-label="submit form"
+              >
+                Submit
+              </button>
+              <input
+                class="rounded btn btn-secondary font-weight-bold"
+                type="reset"
+                value="Reset"
+                aria-label="submit form"
+              />
+            </div>
+          </div>
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
