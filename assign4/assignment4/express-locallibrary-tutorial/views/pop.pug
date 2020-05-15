@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href='../catalog') countries in the world and their capitals. 
+  br
+  a(href='./') countries that have at least 20 million in population.
+  br
+  a(href='../users/') number of countries in each region
+  p #{writeHere1}

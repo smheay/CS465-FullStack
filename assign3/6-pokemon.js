@@ -9,6 +9,7 @@ let getDataAsync = async (url) => {
     let response = await fetch(url);
     let data = await response.json();
     console.log("Data", data);
+    
   
 
     data.results.forEach((item) => {
