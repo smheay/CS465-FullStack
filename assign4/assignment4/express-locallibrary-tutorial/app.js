@@ -7,7 +7,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var catalogRouter = require('./routes/catalog');  //Import routes for "catalog" area of site
-var popRouter = require('./routes/population');  //Import routes for "catalog" area of site
+var popRouter = require('./routes/population');  //Import routes for "pop" area of site
+var allRouter = require('./routes/all');  //Import routes for "all" area of site
+
+
 
 
 var app = express();
@@ -26,7 +29,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);
 app.use('/population', popRouter);
-
+app.use('/all', allRouter);
 
 
 

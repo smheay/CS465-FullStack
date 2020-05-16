@@ -1,5 +1,4 @@
 var express = require('express');
-var express = require("express");
 var router = express.Router();
 var async = require("express-async-await");
 var fetch = require("node-fetch");
@@ -23,15 +22,16 @@ router.get("/", async function (req, res, next) {
     }); 
 
 
-    var counts = [];
-    var name2 = [];
+    var counts = {};
     
     name.forEach(function(x) {
         counts[x] = (counts[x] || 0) + 1;
 
     });
 
+  
     console.log(counts);
+    str = JSON.stringify(counts);
    
   } catch (error) {
     console.log("Request failed", error);
@@ -41,14 +41,7 @@ router.get("/", async function (req, res, next) {
     title: "REGIONS",
     writeHere1: 
     `
-    ${counts}
-    Asia: 50,
-    Europe: 53,
-    Africa: 60,
-    Oceania: 27,
-    Americas: 57,
-    Polar: 1,
-    '': 2 `
+    ${str} `
                   
   });
 
