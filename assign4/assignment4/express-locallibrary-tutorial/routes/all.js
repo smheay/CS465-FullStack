@@ -19,8 +19,6 @@ router.get("/", async function (req, res, next) {
     console.log(data);
 
     str = JSON.stringify(data);
-    str = JSON.parse(data);
-
     
   };
   ooIprocessData();
